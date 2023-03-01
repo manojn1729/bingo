@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "start learning express",
   "main": "index.js",
+  "scripts": {
+    "start": "server.js"
+  },
   "author": "MANOJ N",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "path": "^0.12.7",
     "socket.io": "^4.6.1"
   },
-  "scripts": {
-    "start": "server.js"
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
