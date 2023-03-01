@@ -1,5 +1,6 @@
 let playerId;
 let turn;
+let allPlayers=false;
 
 function preConnect(){
     socket=io.connect(serverURL);
@@ -7,6 +8,9 @@ function preConnect(){
 
       for(let i=0;i<data.length;i++){
         if(data[i]==socket.id){
+          if(data.length==2){
+            allPlayers=true;
+          }
             socket.on('wrapData',(agg)=>{
                 if(turn==false && agg.playerId!=playerId){
                     for(let i=0;i<box.length;i++){

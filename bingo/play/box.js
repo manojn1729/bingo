@@ -18,7 +18,7 @@ class Box{
   }
   
   changeStatus(x,y){
-    if((x>this.x && x<this.x+boxSize) && (y>this.y && y<this.y+boxSize) && turn==true && this.state==255 && mouseFunction==true){
+    if((x>this.x && x<this.x+boxSize) && (y>this.y && y<this.y+boxSize) && turn==true && this.state==255 && mouseFunction==true && allPlayers==true){
       brickSound.play();
         this.state=100;
         turn=!turn;
