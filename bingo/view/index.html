@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Iframes in HTML - Horizontal Split</title>
+	<style>
+                * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+		iframe {
+			display: block;
+			width: 48vw;
+			height: 100vw;
+			float: left;
+		}
+		iframe:first-child {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<iframe src="http://localhost:3000/player0/" width="50%" height="95%"></iframe>
+	<iframe src="http://localhost:3000/player1/" width="50%" height="95%"></iframe>
+</body>
+</html>
