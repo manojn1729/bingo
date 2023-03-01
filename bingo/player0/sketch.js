@@ -3,7 +3,7 @@ let winSound;
 let playerName;
 let playId=0;
 let turn=1;
-let serverURL='http://localhost:3000'
+let serverURL='https://noisy-chemical-tachometer.glitch.me';
 
 function preload(){
   brickSound=loadSound('brick.wav');
