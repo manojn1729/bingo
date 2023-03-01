@@ -1,6 +1,8 @@
 var access=0;
+let serverURL='https://noisy-chemical-tachometer.glitch.me';
+
 function setup() { 
-  socket=io.connect('http://localhost:3000');
+  socket=io.connect(serverURL);
   socket.on('access',(data)=>{
     console.log(data);
     access=data;
